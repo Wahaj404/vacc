@@ -1,0 +1,25 @@
+mutation CreateFirstAppointment($options: AppointmentInput!) {
+  createFirstAppointment(options: $options) {
+    errors {
+      field
+      message
+    }
+    appointment {
+      id
+      center {
+        name
+        appointments {
+          id
+        }
+      }
+      vaccineName
+      citizen {
+        info {
+          name
+        }
+      }
+      time
+      completed
+    }
+  }
+}

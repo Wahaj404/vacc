@@ -1,0 +1,32 @@
+mutation Verify($id: Int!) {
+  verify(id: $id) {
+    errors {
+      field
+      message
+    }
+    citizen {
+      cnic
+      firstAppointment {
+        id
+        center {
+          name
+        }
+        vaccineName
+        time
+        completed
+      }
+      secondAppointment {
+        id
+        center {
+          name
+        }
+        vaccineName
+        time
+        completed
+      }
+      info {
+        name
+      }
+    }
+  }
+}

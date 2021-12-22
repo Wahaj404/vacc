@@ -1,0 +1,9 @@
+query Me {
+  citizenMeQuery {
+    cnic
+    updatedAt
+    info {
+      name
+    }
+  }
+}

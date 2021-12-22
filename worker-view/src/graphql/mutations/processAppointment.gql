@@ -1,0 +1,12 @@
+mutation ProcessAppointment($cnic: String!, $id: Int!) {
+  processAppointment(appointmentId: $id, cnic: $cnic) {
+    errors {
+      field
+      message
+    }
+    appointment {
+      id
+      completed
+    }
+  }
+}

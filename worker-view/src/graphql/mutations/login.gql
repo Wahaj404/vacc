@@ -1,0 +1,5 @@
+mutation Login($options: WorkerInput!) {
+  workerLogin(options: $options) {
+    ...Fetch
+  }
+}

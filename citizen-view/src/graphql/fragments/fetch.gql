@@ -1,0 +1,9 @@
+fragment Fetch on CitizenResponse {
+  errors {
+    field
+    message
+  }
+  citizen {
+    cnic
+  }
+}

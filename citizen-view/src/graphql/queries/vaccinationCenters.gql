@@ -1,0 +1,16 @@
+query VaccinationCenters {
+  vaccinationCenters {
+    name
+    appointments {
+      time
+    }
+    vaccines {
+      name
+      doseCount
+    }
+    location {
+      latitude
+      longitude
+    }
+  }
+}

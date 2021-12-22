@@ -1,0 +1,6 @@
+query Me {
+  workerMeQuery {
+    username
+    updatedAt
+  }
+}

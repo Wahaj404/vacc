@@ -1,0 +1,25 @@
+mutation CreateSecondAppointment($options: AppointmentInput!) {
+  createSecondAppointment(options: $options) {
+    errors {
+      field
+      message
+    }
+    appointment {
+      id
+      center {
+        name
+        appointments {
+          id
+        }
+      }
+      vaccineName
+      citizen {
+        info {
+          name
+        }
+      }
+      time
+      completed
+    }
+  }
+}

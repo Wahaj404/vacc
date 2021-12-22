@@ -1,0 +1,9 @@
+fragment Fetch on WorkerResponse {
+  errors {
+    field
+    message
+  }
+  worker {
+    username
+  }
+}

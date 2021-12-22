@@ -1,0 +1,16 @@
+query Stats {
+  getStats {
+    firstDose {
+      total
+      lastDay
+    }
+    fullyVaccinated {
+      total
+      lastDay
+    }
+    totalDoses {
+      total
+      lastDay
+    }
+  }
+}

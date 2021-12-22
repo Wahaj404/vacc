@@ -1,0 +1,26 @@
+mutation AppointmentDetails {
+  citizenMe {
+    cnic
+    firstAppointment {
+      id
+      center {
+        name
+      }
+      vaccineName
+      time
+      completed
+    }
+    secondAppointment {
+      id
+      center {
+        name
+      }
+      vaccineName
+      time
+      completed
+    }
+    info {
+      name
+    }
+  }
+}
